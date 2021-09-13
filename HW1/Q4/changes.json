@@ -1,0 +1,1476 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "category_name",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column category_name by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "(20) 10x13 poly mailers",
+          "(30) 9x12 + 5 Polymailers",
+          "10 - 12X15.5 Polymailers",
+          "20 - 10X13 PolyMailers",
+          "6x9 Poly Mailers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(20) 10x13 poly mailers"
+      },
+      {
+        "from": [
+          "Nike Air Max",
+          "Nike Air Max 90",
+          "Nike Air Max 360",
+          "Nike air max"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike Air Max"
+      },
+      {
+        "from": [
+          "NBA 2K17 ps4",
+          "NBA 2k16 (PS4)",
+          "NBA 2k16 PS4",
+          "Nba 2k16 ps4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NBA 2K17 ps4"
+      },
+      {
+        "from": [
+          "Reserved Bundle",
+          "Reserved bundle",
+          "RESERVED BUNDLE",
+          "reserved bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reserved Bundle"
+      },
+      {
+        "from": [
+          "SMASHBOX PHOTO FINISH PRIMER",
+          "Smashbox Photo Finish Primer",
+          "Smashbox Photofinish Primer",
+          "Smashbox photo finish primer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SMASHBOX PHOTO FINISH PRIMER"
+      },
+      {
+        "from": [
+          "VS PINK HOODIE",
+          "VS PINK Hoodie",
+          "Vs pink hoodie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK HOODIE"
+      },
+      {
+        "from": [
+          "Victoria Secret",
+          "Victoria secret",
+          "Victorias secret"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria Secret"
+      },
+      {
+        "from": [
+          "Michael Kors Watch",
+          "Michael Kors watch",
+          "Michael kors watch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michael Kors Watch"
+      },
+      {
+        "from": [
+          "Nintendo DS Lite",
+          "Nintendo DS lite",
+          "Nintendo ds lite"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nintendo DS Lite"
+      },
+      {
+        "from": [
+          "North Face Jacket",
+          "North Face jacket",
+          "North face jacket"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Face Jacket"
+      },
+      {
+        "from": [
+          "American Eagle Jeans",
+          "American Eagle jeans",
+          "American eagle jeans"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Eagle Jeans"
+      },
+      {
+        "from": [
+          "NIKE slides",
+          "Nike Slides",
+          "Nike slides"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIKE slides"
+      },
+      {
+        "from": [
+          "VS PINK WATER BOTTLE",
+          "VS PINK WATERBOTTLE",
+          "VS PINK Water Bottle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK WATER BOTTLE"
+      },
+      {
+        "from": [
+          "Lularoe Randy",
+          "LuLaRoe Randy",
+          "Lularoe randy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lularoe Randy"
+      },
+      {
+        "from": [
+          "Coach Wallet",
+          "Coach wallet",
+          "coach Wallet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coach Wallet"
+      },
+      {
+        "from": [
+          "Michael Kors",
+          "Michael kors",
+          "❤️Michael Kors ❤️"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michael Kors"
+      },
+      {
+        "from": [
+          "Urban Decay Naked 3 Palette",
+          "Urban Decay Naked Palette",
+          "Urban decay naked palette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Urban Decay Naked 3 Palette"
+      },
+      {
+        "from": [
+          "10 Shisha hookah pens you choose flavors",
+          "4 Shisha hookah pens you choose flavors!",
+          "5 Shisha hookah pens you choose flavors!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10 Shisha hookah pens you choose flavors"
+      },
+      {
+        "from": [
+          "Too Faced Better Than Sex Mascara",
+          "Too faced Better than Sex Mascara",
+          "Too faced better than sex mascara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Too Faced Better Than Sex Mascara"
+      },
+      {
+        "from": [
+          "iPhone Case",
+          "Iphone 4 case",
+          "iPhone 6 case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone Case"
+      },
+      {
+        "from": [
+          "Lularoe TC Leggings",
+          "LULAROE TC leggings",
+          "LuLaRoe TC leggings"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lularoe TC Leggings"
+      },
+      {
+        "from": [
+          "VICTORIAS SECRET BRA 34D",
+          "Victoria Secret bra 38DDD",
+          "Victoria's Secret Bra 34d"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICTORIAS SECRET BRA 34D"
+      },
+      {
+        "from": [
+          "iPhone 4",
+          "Iphone 4",
+          "iPhone 5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 4"
+      },
+      {
+        "from": [
+          "LuLaRoe OS Leggings",
+          "Lularoe OS leggings",
+          "Lularoe OS Leggings"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LuLaRoe OS Leggings"
+      },
+      {
+        "from": [
+          "KATE SPADE SHOULDER BAG",
+          "Kate Spade shoulder bag",
+          "Kate Spade shoulder bag ©"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KATE SPADE SHOULDER BAG"
+      },
+      {
+        "from": [
+          "Tank Top",
+          "Tank top",
+          "tank top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tank Top"
+      },
+      {
+        "from": [
+          "Victoria's Secret PINK Tank",
+          "Victorias Secret PINK Tank",
+          "Victorias secret PINK tank"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria's Secret PINK Tank"
+      },
+      {
+        "from": [
+          "Fitbit Charge 2",
+          "Fitbit charge",
+          "Fitbit charge 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fitbit Charge 2"
+      },
+      {
+        "from": [
+          "Miss Me jeans",
+          "Miss Me Jeans",
+          "miss me jeans"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Miss Me jeans"
+      },
+      {
+        "from": [
+          "Coach purse",
+          "Coach Purse",
+          "coach purse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coach purse"
+      },
+      {
+        "from": [
+          "LuLaRoe Irma",
+          "Lula Roe Irma"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LuLaRoe Irma"
+      },
+      {
+        "from": [
+          "Men's Nike Shirt",
+          "Men's Nike shirt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Men's Nike Shirt"
+      },
+      {
+        "from": [
+          "Urban Decay All Nighter Foundation",
+          "Urban Decay All Nighter Foundation 2.0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Urban Decay All Nighter Foundation"
+      },
+      {
+        "from": [
+          "40 Thank you stickers",
+          "48 thank you stickers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40 Thank you stickers"
+      },
+      {
+        "from": [
+          "American eagle shorts",
+          "american eagle shorts!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American eagle shorts"
+      },
+      {
+        "from": [
+          "VS PINK iphone 6s case",
+          "VS Pink iPhone 6/6s case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK iphone 6s case"
+      },
+      {
+        "from": [
+          "Morphe Brushes",
+          "Morphe brushes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Morphe Brushes"
+      },
+      {
+        "from": [
+          "Cheer Bow",
+          "Cheer bow!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cheer Bow"
+      },
+      {
+        "from": [
+          "Mario Badescu Drying Lotion",
+          "Mario badescu drying lotion"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mario Badescu Drying Lotion"
+      },
+      {
+        "from": [
+          "2 iPhone 6s Plus cases",
+          "iPhone 6/6s plus cases"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 iPhone 6s Plus cases"
+      },
+      {
+        "from": [
+          "BETTER THAN SEX MASCARA",
+          "Better than sex mascara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BETTER THAN SEX MASCARA"
+      },
+      {
+        "from": [
+          "VS Pink Sweatpants",
+          "Vs pink sweatpants"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS Pink Sweatpants"
+      },
+      {
+        "from": [
+          "FitBit Alta",
+          "Fitbit Alta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FitBit Alta"
+      },
+      {
+        "from": [
+          "Reserved",
+          "RESERVED!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reserved"
+      },
+      {
+        "from": [
+          "VICTORIAS SECRET PINK BUNDLE",
+          "Victoria's Secret pink bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICTORIAS SECRET PINK BUNDLE"
+      },
+      {
+        "from": [
+          "Vans shoes",
+          "vans shoes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vans shoes"
+      },
+      {
+        "from": [
+          "2 Ray-ban sunglasses",
+          "Ray Ban sunglasses"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 Ray-ban sunglasses"
+      },
+      {
+        "from": [
+          "Chocker",
+          "Choker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chocker"
+      },
+      {
+        "from": [
+          "Black booties",
+          "Black Booties"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Black booties"
+      },
+      {
+        "from": [
+          "Rae Dunn Tea Canister",
+          "Rae Dunn tea canister"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rae Dunn Tea Canister"
+      },
+      {
+        "from": [
+          "VS PINK Tank",
+          "VS PINK tank"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK Tank"
+      },
+      {
+        "from": [
+          "Sinful Shirt",
+          "Sinful shirt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sinful Shirt"
+      },
+      {
+        "from": [
+          "XBOX One",
+          "Xbox One"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "XBOX One"
+      },
+      {
+        "from": [
+          "Bundle",
+          "BUNDLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bundle"
+      },
+      {
+        "from": [
+          "Victoria Secret pink lot",
+          "Victoria's Secret PINK LOT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria Secret pink lot"
+      },
+      {
+        "from": [
+          "Fitbit charge HR",
+          "Fitbit charge hr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fitbit charge HR"
+      },
+      {
+        "from": [
+          "Adidas shirt",
+          "ADIDAS SHIRT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adidas shirt"
+      },
+      {
+        "from": [
+          "Air Jordan 7 Retro",
+          "Air Jordan Retro 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Air Jordan 7 Retro"
+      },
+      {
+        "from": [
+          "Xbox one controller",
+          "Xbox One Controller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Xbox one controller"
+      },
+      {
+        "from": [
+          "Ring",
+          "Ring❤️"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ring"
+      },
+      {
+        "from": [
+          "VS PINK SLIDES",
+          "Vs pink slides"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK SLIDES"
+      },
+      {
+        "from": [
+          "PINK TANKTOP",
+          "PINK tank top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PINK TANKTOP"
+      },
+      {
+        "from": [
+          "American Eagle Jeggings",
+          "American Eagle jeggings 0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Eagle Jeggings"
+      },
+      {
+        "from": [
+          "Maxi Dress",
+          "Maxi dress"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maxi Dress"
+      },
+      {
+        "from": [
+          "American Girl Books",
+          "American Girl books"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Girl Books"
+      },
+      {
+        "from": [
+          "Fashion Nova Outfit",
+          "Fashion nova outfit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fashion Nova Outfit"
+      },
+      {
+        "from": [
+          "ABH modern renaissance palette",
+          "Abh modern Renaissance palette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ABH modern renaissance palette"
+      },
+      {
+        "from": [
+          "Vera Bradley lanyard",
+          "Vera Bradley Lanyard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vera Bradley lanyard"
+      },
+      {
+        "from": [
+          "Boy shirt bundle",
+          "Boys shirt bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boy shirt bundle"
+      },
+      {
+        "from": [
+          "PINK Fanny pack",
+          "Pink Fanny Pack"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PINK Fanny pack"
+      },
+      {
+        "from": [
+          "7 Leapster Games",
+          "Leapster games"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7 Leapster Games"
+      },
+      {
+        "from": [
+          "Knee High Boots",
+          "Knee high boots"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Knee High Boots"
+      },
+      {
+        "from": [
+          "Victoria secret shimmer mist",
+          "Victoria's Secret Shimmer Mist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria secret shimmer mist"
+      },
+      {
+        "from": [
+          "iPhone 5s",
+          "IPhone 5s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 5s"
+      },
+      {
+        "from": [
+          "Toms",
+          "TOMS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Toms"
+      },
+      {
+        "from": [
+          "Tote bag",
+          "tote bag"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tote bag"
+      },
+      {
+        "from": [
+          "Kendra Scott",
+          "Kendra scott"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kendra Scott"
+      },
+      {
+        "from": [
+          "Boys Boots",
+          "Boys boots"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boys Boots"
+      },
+      {
+        "from": [
+          "10k gold ring",
+          "14K Gold Ring"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10k gold ring"
+      },
+      {
+        "from": [
+          "Jordans size 10c",
+          "Jordans size 2c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordans size 10c"
+      },
+      {
+        "from": [
+          "2 Tank Tops",
+          "Tank Tops"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 Tank Tops"
+      },
+      {
+        "from": [
+          "Authentic Coach purse",
+          "Authentic coach purse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Authentic Coach purse"
+      },
+      {
+        "from": [
+          "Maybelline Bundle",
+          "maybelline bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maybelline Bundle"
+      },
+      {
+        "from": [
+          "Lip sense bombshell",
+          "Lipsense Bombshell"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lip sense bombshell"
+      },
+      {
+        "from": [
+          "Prom dress",
+          "Prom Dress"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prom dress"
+      },
+      {
+        "from": [
+          "Michael Kors Wallet",
+          "Michael kors Wallet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michael Kors Wallet"
+      },
+      {
+        "from": [
+          "White converse",
+          "White Converse!!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "White converse"
+      },
+      {
+        "from": [
+          "Victoria's Secret Sports Bra",
+          "Victoria's secret sports bra"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria's Secret Sports Bra"
+      },
+      {
+        "from": [
+          "Eyeko London Liquid Eyeliner",
+          "⚡️ Eyeko London liquid eyeliner⚡️"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eyeko London Liquid Eyeliner"
+      },
+      {
+        "from": [
+          "Levi's",
+          "Levi's 504"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Levi's"
+      },
+      {
+        "from": [
+          "BRA BUNDLE",
+          "Bra bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BRA BUNDLE"
+      },
+      {
+        "from": [
+          "Victoria Secret Bra",
+          "Victoria secret bra"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria Secret Bra"
+      },
+      {
+        "from": [
+          "OtterBox Defender Iphone 6 Plus/6s Plus",
+          "Otterbox Defender iPhone 6 Plus/6s Plus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OtterBox Defender Iphone 6 Plus/6s Plus"
+      },
+      {
+        "from": [
+          "Kate Spade Wallet",
+          "Kate spade wallet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kate Spade Wallet"
+      },
+      {
+        "from": [
+          "Sarah",
+          "Sarah."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sarah"
+      },
+      {
+        "from": [
+          "VS PINK Strapless Bra",
+          "Vs pink strapless bra"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VS PINK Strapless Bra"
+      },
+      {
+        "from": [
+          "Statement Necklace",
+          "Statement necklace"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Statement Necklace"
+      },
+      {
+        "from": [
+          "Lululemon Tank, size 6",
+          "Lululemon tank size 8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lululemon Tank, size 6"
+      },
+      {
+        "from": [
+          "iPhone 6/6S case",
+          "iPhone 6/6s case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 6/6S case"
+      },
+      {
+        "from": [
+          "LulaRoe TC",
+          "Lularoe TC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LulaRoe TC"
+      },
+      {
+        "from": [
+          "Home Decor",
+          "Home decor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Home Decor"
+      },
+      {
+        "from": [
+          "Coach Wristlet",
+          "Coach wristlet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coach Wristlet"
+      },
+      {
+        "from": [
+          "30 PolyMailers",
+          "35 Poly Mailers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "30 PolyMailers"
+      },
+      {
+        "from": [
+          "LuLaRoe Julia Dress XL",
+          "Lularoe Julia Dress 3XL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LuLaRoe Julia Dress XL"
+      },
+      {
+        "from": [
+          "LuLaRoe TC Leggings New",
+          "Lularoe TC leggings new"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LuLaRoe TC Leggings New"
+      },
+      {
+        "from": [
+          "2 Silver Jeans Size 32/33",
+          "Silver jeans size 11"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 Silver Jeans Size 32/33"
+      },
+      {
+        "from": [
+          "Life is Good T-Shirt",
+          "Life is good Tshirt."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Life is Good T-Shirt"
+      },
+      {
+        "from": [
+          "Wallet",
+          "wallet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wallet"
+      },
+      {
+        "from": [
+          "Lululemon Define Jacket 4",
+          "Lululemon Define jacket 6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lululemon Define Jacket 4"
+      },
+      {
+        "from": [
+          "American Eagle Jeggings Size 2",
+          "American eagle jeggings size 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Eagle Jeggings Size 2"
+      },
+      {
+        "from": [
+          "Nike sports bra",
+          "NIKE sports bra"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike sports bra"
+      },
+      {
+        "from": [
+          "iPhone 5c",
+          "Iphone 5c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 5c"
+      },
+      {
+        "from": [
+          "Tory Burch wallet",
+          "ToryBurch Wallet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tory Burch wallet"
+      },
+      {
+        "from": [
+          "Candy / Snack Bundle",
+          "Candy/Snack Bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Candy / Snack Bundle"
+      },
+      {
+        "from": [
+          "iPhone 6/6s plus Case",
+          "iPhone 6/6s plus case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 6/6s plus Case"
+      },
+      {
+        "from": [
+          "Vera Bradley backpack",
+          "Vera bradley backpack"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vera Bradley backpack"
+      },
+      {
+        "from": [
+          "Marvel Legends",
+          "Marvel legends"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marvel Legends"
+      },
+      {
+        "from": [
+          "Nike Hoodie",
+          "Nike hoodie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike Hoodie"
+      },
+      {
+        "from": [
+          "3 VS PINK DOGS",
+          "VS Pink Dogs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3 VS PINK DOGS"
+      },
+      {
+        "from": [
+          "Hollister Jeans",
+          "Hollister jeans"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hollister Jeans"
+      },
+      {
+        "from": [
+          "Ray-Ban Aviators",
+          "Ray-Ban aviators"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ray-Ban Aviators"
+      },
+      {
+        "from": [
+          "Gray sweater",
+          "Grey Sweater"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gray sweater"
+      },
+      {
+        "from": [
+          "Yoga Mat",
+          "Yoga mat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yoga Mat"
+      },
+      {
+        "from": [
+          "10 Foot iPhone Charger",
+          "6 Foot iPhone Charger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10 Foot iPhone Charger"
+      },
+      {
+        "from": [
+          "iPhone 7 Tempered Glass Screen Protector",
+          "iPhone tempered glass screen protector"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPhone 7 Tempered Glass Screen Protector"
+      },
+      {
+        "from": [
+          "Victoria Secret PINK Socks",
+          "Victoria's Secret pink socks"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria Secret PINK Socks"
+      },
+      {
+        "from": [
+          "LuLaRoe Cassie",
+          "Lularoe Cassie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LuLaRoe Cassie"
+      },
+      {
+        "from": [
+          "Nike Running Shorts",
+          "Nike Running shorts"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike Running Shorts"
+      },
+      {
+        "from": [
+          "For Michelle",
+          "For michelle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "For Michelle"
+      },
+      {
+        "from": [
+          "Urban Decay All Nighter Setting Spray",
+          "Urban Decay all nighter setting spray"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Urban Decay All Nighter Setting Spray"
+      },
+      {
+        "from": [
+          "5 lanyard bundle ❤️❤️",
+          "LANYARD bundle ❤️7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5 lanyard bundle ❤️❤️"
+      },
+      {
+        "from": [
+          "Push up bikini top",
+          "push up bikini top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Push up bikini top"
+      },
+      {
+        "from": [
+          "True religion jeans",
+          "True religion jeans 24"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "True religion jeans"
+      },
+      {
+        "from": [
+          "Nike shorts",
+          "Nike Shorts"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike shorts"
+      },
+      {
+        "from": [
+          "Nike Pros",
+          "Nike pros"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike Pros"
+      },
+      {
+        "from": [
+          "Victoria Secret PINK Dress",
+          "Victoria's Secret PINK dress"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria Secret PINK Dress"
+      },
+      {
+        "from": [
+          "Nike Dri Fit Shorts",
+          "Nike dri-fit shorts"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nike Dri Fit Shorts"
+      },
+      {
+        "from": [
+          "❗️SALE❗️[rm] Kate Spade Crossbody",
+          "❗️SALE❗️[rm] Kate Spade crossbody"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "❗️SALE❗️[rm] Kate Spade Crossbody"
+      },
+      {
+        "from": [
+          "Iphone 6+/6s+ tempered glass",
+          "iPhone 6/6s/7 tempered glass"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Iphone 6+/6s+ tempered glass"
+      },
+      {
+        "from": [
+          "Anastasia Beverly Hills That Glow",
+          "anastasia beverly hills that glow"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anastasia Beverly Hills That Glow"
+      },
+      {
+        "from": [
+          "Huf Shirt",
+          "huf shirt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huf Shirt"
+      },
+      {
+        "from": [
+          "PS VITA",
+          "Ps Vita"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PS VITA"
+      },
+      {
+        "from": [
+          "Off the shoulder top",
+          "Off the Shoulder Top"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Off the shoulder top"
+      },
+      {
+        "from": [
+          "UGGS",
+          "Uggs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UGGS"
+      },
+      {
+        "from": [
+          "Glass Pipes,Bongs,Water Pipes,Bubblers",
+          "Glass Pipes,Bongs,Water pipes,Bubblers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glass Pipes,Bongs,Water Pipes,Bubblers"
+      },
+      {
+        "from": [
+          "Fidget Spinner !",
+          "Fidget Spinner *"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fidget Spinner !"
+      },
+      {
+        "from": [
+          "Drug Rug Sweater",
+          "Drug Rug sweater"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Drug Rug Sweater"
+      },
+      {
+        "from": [
+          "Converse Sneakers",
+          "Converse sneakers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Converse Sneakers"
+      },
+      {
+        "from": [
+          "Bundle!",
+          "Bundle!!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bundle!"
+      },
+      {
+        "from": [
+          "Tartelette in Bloom Palette",
+          "Tartelette in bloom palette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tartelette in Bloom Palette"
+      },
+      {
+        "from": [
+          "Coach Shoes",
+          "Coach shoes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coach Shoes"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "brand_name",
+    "expression": "grel:if(value==null,'Unknown',value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column brand_name using expression grel:if(value==null,'Unknown',value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "price",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column price using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "price",
+    "expression": "grel:if(value>90,1,0)",
+    "onError": "set-to-blank",
+    "newColumnName": "high_priced",
+    "columnInsertIndex": 11,
+    "description": "Create column high_priced at index 11 based on column price using expression grel:if(value>90,1,0)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "item_description",
+    "expression": "grel:if(value.toLowercase().contains(\"discount\").or (value.toLowercase().contains(\"offer\").or (value.toLowercase().contains(\"sale\"))),1,0)",
+    "onError": "set-to-blank",
+    "newColumnName": "has_offer",
+    "columnInsertIndex": 14,
+    "description": "Create column has_offer at index 14 based on column item_description using expression grel:if(value.toLowercase().contains(\"discount\").or (value.toLowercase().contains(\"offer\").or (value.toLowercase().contains(\"sale\"))),1,0)"
+  }
+]
