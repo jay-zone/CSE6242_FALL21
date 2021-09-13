@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- cse6242 -->
+
+<!-- run: http-server & -->
+
+<head>
+    
+    <title>running total of tmdb movies by year</title>
+  <style>
+    <!-- define CSS rules -->
+  </style>
+</head>
+
+<body>
+
+  <script src="lib/d3/d3.min.js"></script>
+  <script src="lib/d3-dsv/d3-dsv.min.js"></script>
+  <script src="lib/d3-fetch/d3-fetch.min.js"></script>
+
+
+  <script>
+      
+      
+      
+          
+    // define the dimensions and margins for the graph
+   
+    var margin = {top: 50, right: 30, bottom: 50, left: 100},
+        width = 1050 - margin.left - margin.right,
+        height = 540 - margin.top - margin.bottom;
+
+
+    // define function to parse time in years format
+	var year_converter = d3.timeParse('%Y')
+
+    // create scales x & y for X and Y axis and set their ranges
+    var padding = 0.4
+    
+    var xScale = d3.scaleTime().range([padding, width - padding]);
+        yScale = d3.scaleLinear().range([height,0])
+    
+    //var g = svg.append("g")
+              // .attr("transform", "translate(" + 100 + "," + 100 + ")");
+
+    // append svg element to the body of the page +
+    // set dimensions and position of the svg element
+      
+    var svg = d3.select('body')
+                .append('svg')
+                    .attr('width', width + margin.left+margin.right)
+                    .attr('height', height + margin.top + margin.bottom)
+                .append('g')
+                    .attr('transform', 
+                          "translate(" + margin.left + "," + margin.top + ")");
+     
+    
+    //var svg = d3.select("body").append("svg") 
+
+
+    // Get the data
+	var pathToCsv = "q3.csv";		// path to csv
+	
+    d3.dsv(",", pathToCsv, function (d) {
+        
+      return {
+          year: year_converter(d.year),
+          running_total : parseFloat(d.running_total),
+          
+        // format data attributes if required
+      }
+    }).then(function (data) {
+      console.log(data); // you should see the data in your browser's developer tools console 
+      
+      /* Create bar plot using data from csv */
+
+      // set the domains of X and Y scales based on data
+      xScale.domain([
+                d3.min(data, function(d) { return d.year; }),
+                d3.max(data, function(d) { return d.year; })
+           ]);
+      yScale.domain([0, d3.max(data, function(d){return d.running_total; })]);
+
+      // Add bars to svg - create new elements based on your data
+      svg.selectAll('rect')
+        .data(data)
+        .enter()
+        .append('rect')
+        .attr("x", function(d) { return xScale(d.year); })
+        .attr("y", function(d) { return yScale(d.running_total); })
+        .attr("width", width/data.length - 0.3)
+        .attr("height", function(d) { return height - yScale(d.running_total); })
+        .attr("fill", "steelblue");
+
+
+      // Add the X Axis
+      var x_axis = d3.axisBottom().scale(xScale);
+    
+      svg.append('g')
+        .attr('class','axis')
+        .attr('id','x_axis')
+        .attr("transform", "translate(0," + (height - padding) + ")")
+        .call(x_axis);
+
+      // Add the text label for X Axis
+      svg.append('text')
+        .attr("class", "x_label")
+        .attr('id', 'x_axis_label')
+        .attr("text-anchor", "end")
+        .attr("x", 500)
+        .attr("y",  height + 40 )
+        .text("Year");
+
+      // Add the Y Axis
+        var y_axis = d3.axisLeft().scale(yScale);
+        
+      svg.append('g')
+        .attr('class','axis')
+        .attr('id','y_axis')
+        .call(y_axis)
+      
+
+      // Add the text label for Y axis
+      var axisLabelX = -50;
+      var axisLabelY = 500 / 2;
+      svg.append('text')
+        .attr('class','y_label')
+        .attr('id', 'y_axis_label')
+        .attr('text_anchor','middle')
+        .attr('transform','rotate(-90)')
+        .attr('x', -250)
+        .attr('y', -60)
+        .text('Running Total')
+        
+    //Add GT username
+        svg.append('text')
+        .attr("class", "GTusername")
+        .attr('id', 'credit')
+        .attr("text-anchor", "end")
+        .attr("x", 900)
+        .attr("y",  height + 40 )
+        .text("mcampo6");
+        
+    //Add title
+        svg.append("text")
+        .attr('id','title')
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text("Running Total of TMDb Movies by Year");
+
+    }).catch(function (error) {
+      console.log(error);
+    });
+
+
+  </script>
+
+</body>
